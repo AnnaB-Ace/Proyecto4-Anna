@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .slider {
   padding-left: 0px;
   padding-right: 0px; }
@@ -13,29 +12,38 @@
   z-index: 1000;
   height: 60px;
   width: 100%;
-  /* background: rgba(34, 34, 34, 0.25); */
   background: #0c0c0c !important;
   -webkit-transition: all ease-out 0.5s;
   -moz-transition: all ease-out 0.5s;
   -o-transition: all ease-out 0.5s;
   transition: all ease-out 0.5s; }
-  @media (max-width: 768px) {
+  @media (max-width: 990px) {
     .Header__contenedor {
       position: fixed;
+      height: 45px;
       z-index: 1000;
       width: 100%;
-      /* background: rgba(34, 34, 34, 0.25); */
       background-color: #2f2e2e;
       -webkit-transition: all ease-out 0.5s;
       -moz-transition: all ease-out 0.5s;
       -o-transition: all ease-out 0.5s;
       transition: all ease-out 0.5s; } }
-  @media (max-width: 768px) {
-    .Header__contenedor .header__logo {
-      display: flex;
-      justify-content: center; } }
+  .Header__contenedor .header__logo {
+    margin-left: 25px; }
+    @media (max-width: 990px) {
+      .Header__contenedor .header__logo {
+        width: 100px;
+        height: 50px;
+        position: relative;
+        top: -15px; } }
   .Header__contenedor .navbar-toggler-icon {
     background-color: white; }
+  .Header__contenedor .navbar-toggler {
+    background-color: white; }
+    @media (max-width: 990px) {
+      .Header__contenedor .navbar-toggler {
+        position: relative;
+        top: -15px; } }
   .Header__contenedor .header__nav {
     color: #fff !important;
     font-family: "Bebas Neue", cursive;
@@ -78,54 +86,102 @@
   display: block;
   width: 150px;
   height: 30px;
-  background-color: #d69869;
-  border: solid 2px white;
+  background: #f1f1f1;
+  border: 10px white !important;
+  border-radius: 8px;
+  transition: 0.3s all;
+  font-family: "Yusei Magic", sans-serif;
   margin: auto;
-  color: white; }
-  .Reserva__parrafo a {
-    text-decoration: none; }
+  text-decoration: none !important;
+  text-align: center;
+  color: #2f2e2e; }
+
+.Reserva__parrafo:hover {
+  opacity: 0.8;
+  color: #0c0c0c; }
 
 /* inicio css slider index */
-/* Inicio css nosotros del index */
-.nosotros {
-  background: #0c0c0c;
-  width: 100%;
-  height: 400x; }
-  .nosotros .nosotros__texto {
-    width: 600px;
-    height: 400px;
-    padding: 25px;
-    color: #fff;
-    background-color: #0c0c0c;
-    font-size: 18px;
-    font-family: "Yusei Magic", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center; }
-    @media (max-width: 768px) {
-      .nosotros .nosotros__texto {
-        display: block;
-        text-align: center;
-        margin: 10px auto;
-        font-size: 14px;
-        background: #2f2e2e;
-        width: 300px; } }
-  .nosotros .nosotros__imagen {
-    margin: auto;
-    text-align: center; }
-    .nosotros .nosotros__imagen .nosotros__imagen--tamaño {
-      width: 100%; }
-      @media (max-width: 376px) {
-        .nosotros .nosotros__imagen .nosotros__imagen--tamaño {
-          margin: auto;
-          text-align: center; } }
-    @media (max-width: 376px) {
-      .nosotros .nosotros__imagen {
-        width: 200px;
-        height: 200px; } }
+.divslider {
+  background: url("../img/sliderC.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px; }
+  @media (max-width: 992px) {
+    .divslider {
+      height: 600px !important; } }
+  @media (max--width: 768px) {
+    .divslider {
+      height: 500px !important; } }
+  @media (max-width: 400px) {
+    .divslider {
+      height: 400px !important; } }
+  @media (max-width: 375px) {
+    .divslider {
+      height: 400px !important; } }
+  .divslider .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 700; }
+    @media (max-width: 400px) {
+      .divslider .container {
+        font-size: 60px; } }
+    @media (max-width: 375px) {
+      .divslider .container {
+        height: 400px !important;
+        font-size: 50px;
+        top: 70%;
+        left: 50%; } }
+    .divslider .container h1 {
+      font-size: 72px;
+      letter-spacing: 0.08em;
+      margin: auto;
+      font-family: "Bebas Neue", cursive;
+      color: #fff; }
+      @media (max-width: 400px) {
+        .divslider .container h1 {
+          font-size: 60px; } }
+      .divslider .container h1 span {
+        border: 7px solid white;
+        padding: 6px 14px;
+        display: inline-block; }
+        @media (max-width: 375px) {
+          .divslider .container h1 span {
+            border: 4px solid white;
+            font-size: 40px; } }
+    .divslider .container .des {
+      margin: 20px;
+      display: block;
+      font-size: 26px;
+      color: #fff;
+      font-family: "Yusei Magic", sans-serif; }
+      @media (max-width: 375px) {
+        .divslider .container .des {
+          font-size: 20px; } }
+    .divslider .container .btn {
+      color: #2f2e2e;
+      padding: 10px 24px;
+      text-decoration: none;
+      background: #f1f1f1;
+      border-radius: 8px;
+      transition: 0.3s all;
+      font-family: "Yusei Magic", sans-serif; }
+    .divslider .container .btn:hover {
+      opacity: 0.8; }
 
-/* Inicio section novedades */
+.divslider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+/* Inicio css novedades del index */
 .Informacion {
   height: 500px;
   display: flex;
@@ -138,9 +194,18 @@
   padding-top: 50px;
   padding-top: 50px;
   padding-top: 50px; }
+  @media (max-width: 1200px) {
+    .Informacion {
+      height: 800px !important; } }
   @media (max-width: 768px) {
     .Informacion {
+      height: 900px !important; } }
+  @media (max-width: 625px) {
+    .Informacion {
       height: 1200px !important; } }
+  @media (max-width: 280px) {
+    .Informacion {
+      height: 1450px !important; } }
   .Informacion .Informacion-1 {
     height: 310px;
     width: 270px;
@@ -149,10 +214,16 @@
     background: white !important; }
     .Informacion .Informacion-1 h3 {
       color: #d69869; }
+    @media (max-width: 625px) {
+      .Informacion .Informacion-1 {
+        width: 400px; } }
     @media (max-width: 768px) {
       .Informacion .Informacion-1 {
-        height: 220px;
+        height: 250px;
         width: 300px; } }
+    @media (max-width: 280px) {
+      .Informacion .Informacion-1 {
+        height: 310px !important; } }
   .Informacion .Informacion-2 {
     height: 310px;
     width: 270px;
@@ -161,10 +232,16 @@
     background: white !important; }
     .Informacion .Informacion-2 h3 {
       color: #d69869; }
+    @media (max-width: 625px) {
+      .Informacion .Informacion-2 {
+        width: 400px; } }
     @media (max-width: 768px) {
       .Informacion .Informacion-2 {
-        height: 220px;
+        height: 250px;
         width: 300px; } }
+    @media (max-width: 280px) {
+      .Informacion .Informacion-2 {
+        height: 310px !important; } }
   .Informacion .Informacion-3 {
     height: 310px;
     width: 270px;
@@ -173,10 +250,16 @@
     background: white !important; }
     .Informacion .Informacion-3 h3 {
       color: #d69869; }
+    @media (max-width: 625px) {
+      .Informacion .Informacion-3 {
+        width: 400px; } }
     @media (max-width: 768px) {
       .Informacion .Informacion-3 {
-        height: 220px;
+        height: 250px;
         width: 300px; } }
+    @media (max-width: 280px) {
+      .Informacion .Informacion-3 {
+        height: 310px !important; } }
   .Informacion .Informacion-4 {
     height: 310px;
     width: 270px;
@@ -185,15 +268,20 @@
     background: white !important; }
     .Informacion .Informacion-4 h3 {
       color: #d69869; }
+    @media (max-width: 625px) {
+      .Informacion .Informacion-4 {
+        width: 400px; } }
     @media (max-width: 768px) {
       .Informacion .Informacion-4 {
-        height: 220px;
+        height: 250px;
         width: 300px; } }
+    @media (max-width: 280px) {
+      .Informacion .Informacion-4 {
+        height: 310px !important; } }
 
 /* fin section novedades */
 .eventos {
   width: 100%;
-  height: 300px;
   background: #323232;
   display: flex;
   flex-direction: row;
@@ -202,11 +290,11 @@
   align-items: center; }
   @media (max-width: 414px) {
     .eventos {
-      height: 400px; } }
+      height: 200px; } }
   .eventos .anuncio {
     width: 420px;
     padding: 20px;
-    height: 250px;
+    height: 200px;
     background: #ffbb01 !important;
     margin: auto; }
     @media (max-width: 415px) {
@@ -220,55 +308,30 @@
       @media (max-width: 415px) {
         .eventos .anuncio p {
           font-size: 20px; } }
-  .eventos .anuncio1 {
-    width: 600px;
-    height: 250px;
-    padding: 20px;
-    color: #fff;
-    margin: auto; }
-    @media (max-width: 415px) {
-      .eventos .anuncio1 {
-        display: flex;
-        flex-direction: column;
-        height: 150px; } }
-    .eventos .anuncio1 p {
-      font-size: 38px !important;
-      font-family: "Yusei Magic", sans-serif !important; }
-      @media (max-width: 415px) {
-        .eventos .anuncio1 p {
-          font-size: 20px !important; } }
-    .eventos .anuncio1 .anuncio1__contacto {
-      font-size: 20px;
-      text-align: center; }
 
 /* inicio  footer */
 .footer {
   background: #0c0c0c !important;
-  height: 400px;
+  height: 180px;
+  width: 100%;
   color: white;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
-  @media (max-width: 415px) {
-    .footer {
-      font-size: 20px;
-      height: 600px !important; } }
-
-.footer__section {
-  padding: 20px;
-  width: 200px;
-  margin: auto; }
-  @media (max-width: 415px) {
-    .footer__section {
-      padding: 0px;
-      width: 150px; } }
-  .footer__section p {
-    margin-left: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly; }
-  .footer__section h3 {
-    text-align: center; }
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .footer h3 {
+    margin-top: 20px;
+    color: #ffbb01;
+    font-family: "Bebas Neue", cursive;
+    font-size: 24px;
+    letter-spacing: 0.08em; }
+    @media (max-width: 280px) {
+      .footer h3 {
+        font-size: 18px !important; } }
+    .footer h3 .disenado {
+      color: #d69869 !important; }
+  .footer p {
+    font-family: "Yusei Magic", sans-serif; }
 
 /* fin del footer */
 /* inicio css section contacto */
@@ -278,15 +341,16 @@
   margin-bottom: 30px;
   background: #d69869;
   margin: 20 auto;
-  text-align: center; }
+  text-align: center;
+  height: 340px; }
   .Contacto .Contacto_formulario {
-    width: 400px;
+    width: 300px;
     margin: 10px auto; }
+    @media (max-width: 280px) {
+      .Contacto .Contacto_formulario {
+        width: 200px; } }
 
 /* fin css section contacto */
-.active1 {
-  background-color: rgba(34, 34, 34, 0.8) !important; }
-
 .Products {
   text-align: center;
   display: flex;
@@ -294,10 +358,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding-bottom: 50px;
-  /* flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly; */ }
+  padding-bottom: 50px; }
   .Products__Box {
     color: #fff;
     width: 231px;
@@ -309,7 +370,7 @@
     margin-bottom: 40px; }
   .Products__Box:hover {
     color: #fff;
-    background: gray;
+    background: #2f2e2e;
     transform: scale(1.1, 1.1); }
   .Products_Box-titulo {
     font-size: 10px;
@@ -336,33 +397,63 @@
       position: relative;
       left: auto; } }
 
-/* inicio css section producto: carta */
 .Carta {
   display: flex;
   flex-direction: column;
-  padding: 30px; }
-  @media (max-width: 768px) {
+  padding: 30px;
+  height: 1000px; }
+  @media (max-width: 992px) {
     .Carta {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between; } }
+      height: 1000px !important; } }
+  @media (max-width: 685px) {
+    .Carta {
+      height: 1100px !important; } }
+  @media (max-width: 611px) {
+    .Carta {
+      height: 1200px !important; } }
+  @media (max-width: 414px) {
+    .Carta {
+      height: 1500px !important; } }
+  @media (max-width: 334px) {
+    .Carta {
+      height: 1700px !important; } }
   .Carta #Pedir {
     /* background: #f4f2ee; */
     background: #f4f2ee;
     width: 950px;
     border-radius: 20px;
-    height: 250px;
+    height: 650px !important;
     margin: auto;
     margin-bottom: 30px; }
-    @media (max-width: 768px) {
+    @media (max-width: 999px) {
       .Carta #Pedir {
         background: #f4f2ee;
-        width: 400px !important;
-        height: 350px !important;
+        width: 700px !important;
+        height: 400px !important;
         margin-top: 20px !important;
         padding: 30px;
-        border-radius: 20px;
-        height: 240px; } }
+        border-radius: 20px; } }
+    @media (max-width: 768px) {
+      .Carta #Pedir {
+        width: 650px !important;
+        height: 350px !important; } }
+    @media (max-width: 685px) {
+      .Carta #Pedir {
+        width: 580px !important;
+        height: 400px !important; } }
+    @media (max-width: 611px) {
+      .Carta #Pedir {
+        width: 390px !important;
+        height: 520px !important; } }
+    @media (max-width: 414px) {
+      .Carta #Pedir {
+        width: 300px !important;
+        height: 550px !important; } }
+    @media (max-width: 334px) {
+      .Carta #Pedir {
+        width: 230px !important;
+        height: 700px !important;
+        font-size: 12px !important; } }
   .Carta .Pedir__Box {
     padding: 5px;
     display: flex;
@@ -372,6 +463,9 @@
     width: 200px;
     font-family: "Bebas Neue", cursive;
     font-size: 18px; }
+    @media (max-width: 334px) {
+      .Carta .Pedir__Box-Titulo {
+        font-size: 16px !important; } }
   .Carta .Pedir__titulo {
     display: block;
     padding: 4px;
@@ -384,50 +478,55 @@
     width: 600px; }
 
 /* fin css section producto: carta */
-.Descripcion {
-  width: 100%;
-  height: 600px;
-  background: #f4f2ee;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  .Descripcion .Descripcion__texto {
-    padding: 30px;
-    width: 600px;
-    font-size: 20px;
-    font-family: "Yusei Magic", sans-serif;
-    height: 400px;
-    background: white; }
-
-.Descripcion-Foto {
-  width: 100%;
-  height: 400px;
-  background: green !important; }
+.nosotros__texto {
+  background: #f4f2ee; }
+  .nosotros__texto .nosotros__texto--letras {
+    margin: 25px;
+    font-size: 22px;
+    font-family: "Yusei Magic", sans-serif; }
+    @media (max-width: 414px) {
+      .nosotros__texto .nosotros__texto--letras {
+        font-size: 20px; } }
+    @media (max-width: 280px) {
+      .nosotros__texto .nosotros__texto--letras {
+        font-size: 16px; } }
+  .nosotros__texto h2 {
+    font-family: "Bebas Neue", cursive;
+    margin: 15px;
+    text-align: center;
+    margin-top: 30px; }
 
 .general {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 400px; }
+  height: 500px; }
 
 .div1 {
   background: url("../img/banner2.jpg") no-repeat;
+  background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  height: 360px; }
-  @media (max-width: 426px) {
+  height: 350px; }
+  @media (max-width: 414px) {
     .div1 {
-      height: 200px; } }
-
-.div2 {
-  background-color: greenyellow !important; }
+      height: 250px;
+      background-position-y: bottom !important; } }
 
 .div3 {
   background: url("../img/banner2.jpg") no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center center;
   height: 300px; }
+  @media (max-width: 414px) {
+    .div3 {
+      height: 250px;
+      background-position-y: bottom !important; } }
 
 .div4 {
   background-color: #ffbb01 !important; }
+
+.active1 {
+  background-color: rgba(34, 34, 34, 0.8) !important; }
