@@ -125,7 +125,7 @@
       height: 400px !important; } }
   @media (max-width: 375px) {
     .divslider {
-      background: url("../img/sliderC.jpg") no-repeat scroll;
+      background: url("../img/sliderC.jpg") no-repeat fixed;
       background-position: center center;
       background-size: cover;
       height: 500px !important; } }
@@ -559,10 +559,10 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 350px; }
+  height: 350px; }
   @media (max-width: 375px) {
     .image2 {
-      height: 200px !important; } }
+      height: 220px !important; } }
 
 .image3 {
   position: relative;
@@ -572,7 +572,7 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 400px; }
+  height: 400px; }
   @media (max-width: 375px) {
     .image3 {
       height: 200px !important; } }
