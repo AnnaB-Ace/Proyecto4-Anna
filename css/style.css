@@ -68,6 +68,14 @@
   .Header__contenedor .header__lista {
     padding-left: 15px;
     padding-right: 15px; }
+  .Header__contenedor .navbar-toggler-icon {
+    background-color: black; }
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url(https://frescosydelcampo.com.mx/img/menu_movil.png); }
+
+.navbar-toggler .navbar-collapse {
+  background: black; }
 
 /* inicio css slider index */
 .Reserva__titulo {
@@ -118,7 +126,7 @@
       height: 400px !important; } }
   @media (max-width: 375px) {
     .divslider {
-      height: 400px !important; } }
+      height: 550px !important; } }
   .divslider .container {
     position: absolute;
     top: 50%;
