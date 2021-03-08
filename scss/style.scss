@@ -48,7 +48,7 @@ $colorNegro: #0c0c0c;
     background-color: white;
   }
   .navbar-toggler {
-    background-color: white;
+    background-color: black;
     @media (max-width: 990px) {
       position: relative;
       top: -15px;
@@ -135,11 +135,13 @@ $colorNegro: #0c0c0c;
 /* inicio css slider index */
 
 .divslider {
-  background: url("../img/sliderC.jpg") no-repeat;
+  background: url("../img/sliderC.jpg") no-repeat fixed;
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
-  height: 800px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 800px;
   @media (max-width: 992px) {
     height: 600px !important;
   }
@@ -422,7 +424,8 @@ $colorNegro: #0c0c0c;
   display: flex;
   flex-direction: column;
   padding: 30px;
-  height: 1000px;
+  height: 800px;
+  // height: 1000px;
   @media (max-width: 992px) {
     height: 1000px !important;
   }
@@ -433,7 +436,8 @@ $colorNegro: #0c0c0c;
     height: 1200px !important;
   }
   @media (max-width: 414px) {
-    height: 1500px !important;
+    // height: 1500px !important;
+    height: 1200px !important;
   }
   @media (max-width: 334px) {
     height: 1700px !important;
@@ -569,4 +573,43 @@ $colorNegro: #0c0c0c;
 // Css active usado para el scroll js
 .active1 {
   background-color: rgba(34, 34, 34, 0.8) !important;
+}
+
+.image1 {
+  position: relative;
+  background: url("../img/sliderA.jpg") no-repeat fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 300px !important;
+}
+.image2 {
+  position: relative;
+  background: url("../img/sliderB.jpg") no-repeat fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+  @media (max-width: 375px) {
+    height: 250px !important;
+    background-position-y: bottom !important;
+  }
+}
+.image3 {
+  position: relative;
+  background: url("../img/sliderA.jpg") no-repeat fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px;
+  @media (max-width: 375px) {
+    height: 250px !important;
+    background-position-y: bottom !important;
+  }
 }

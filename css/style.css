@@ -39,7 +39,7 @@
   .Header__contenedor .navbar-toggler-icon {
     background-color: white; }
   .Header__contenedor .navbar-toggler {
-    background-color: white; }
+    background-color: black; }
     @media (max-width: 990px) {
       .Header__contenedor .navbar-toggler {
         position: relative;
@@ -110,11 +110,13 @@
 
 /* inicio css slider index */
 .divslider {
-  background: url("../img/sliderC.jpg") no-repeat;
+  background: url("../img/sliderC.jpg") no-repeat fixed;
   background-position: center center;
   background-size: cover;
-  background-attachment: fixed;
-  height: 800px; }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  min-height: 800px; }
   @media (max-width: 992px) {
     .divslider {
       height: 600px !important; } }
@@ -409,7 +411,7 @@
   display: flex;
   flex-direction: column;
   padding: 30px;
-  height: 1000px; }
+  height: 800px; }
   @media (max-width: 992px) {
     .Carta {
       height: 1000px !important; } }
@@ -421,7 +423,7 @@
       height: 1200px !important; } }
   @media (max-width: 414px) {
     .Carta {
-      height: 1500px !important; } }
+      height: 1200px !important; } }
   @media (max-width: 334px) {
     .Carta {
       height: 1700px !important; } }
@@ -538,3 +540,41 @@
 
 .active1 {
   background-color: rgba(34, 34, 34, 0.8) !important; }
+
+.image1 {
+  position: relative;
+  background: url("../img/sliderA.jpg") no-repeat fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 300px !important; }
+
+.image2 {
+  position: relative;
+  background: url("../img/sliderB.jpg") no-repeat fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px; }
+  @media (max-width: 375px) {
+    .image2 {
+      height: 250px !important;
+      background-position-y: bottom !important; } }
+
+.image3 {
+  position: relative;
+  background: url("../img/sliderA.jpg") no-repeat fixed;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 400px; }
+  @media (max-width: 375px) {
+    .image3 {
+      height: 250px !important;
+      background-position-y: bottom !important; } }
