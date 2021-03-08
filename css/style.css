@@ -559,11 +559,10 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 400px;
-  height: 400px !important; }
+  min-height: 350px; }
   @media (max-width: 375px) {
     .image2 {
-      height: 250px !important; } }
+      height: 200px !important; } }
 
 .image3 {
   position: relative;
