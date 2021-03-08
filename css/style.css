@@ -116,7 +116,7 @@
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  min-height: 800px; }
+  height: 800px; }
   @media (max-width: 992px) {
     .divslider {
       height: 600px !important; } }
@@ -555,24 +555,15 @@
   position: relative;
   background: url("../img/sliderB.jpg") no-repeat fixed;
   background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 400px; }
+  height: 400px; }
   @media (max-width: 375px) {
     .image2 {
-      height: 250px !important;
-      background-position-y: bottom !important; } }
+      height: 250px !important; } }
 
 .image3 {
   position: relative;
   background: url("../img/sliderA.jpg") no-repeat fixed;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-position: center center;
   min-height: 400px; }
   @media (max-width: 375px) {
     .image3 {

@@ -141,7 +141,7 @@ $colorNegro: #0c0c0c;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  min-height: 800px;
+  height: 800px;
   @media (max-width: 992px) {
     height: 600px !important;
   }
@@ -589,24 +589,25 @@ $colorNegro: #0c0c0c;
   position: relative;
   background: url("../img/sliderB.jpg") no-repeat fixed;
   background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 400px;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
+  // min-height: 400px;
+  height: 400px;
+
   @media (max-width: 375px) {
     height: 250px !important;
-    background-position-y: bottom !important;
   }
 }
 .image3 {
   position: relative;
   background: url("../img/sliderA.jpg") no-repeat fixed;
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-position: center center;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
+  // background-size: cover;
   min-height: 400px;
   @media (max-width: 375px) {
     height: 250px !important;
