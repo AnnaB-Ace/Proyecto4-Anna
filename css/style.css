@@ -554,7 +554,7 @@
 .image2 {
   position: relative;
   background: url("../img/sliderB.jpg") no-repeat fixed;
-  background-position: center center;
+  background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -568,7 +568,7 @@
 .image3 {
   position: relative;
   background: url("../img/sliderA.jpg") no-repeat fixed;
-  background-position: center center;
+  background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
