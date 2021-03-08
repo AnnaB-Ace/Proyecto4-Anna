@@ -138,9 +138,9 @@ $colorNegro: #0c0c0c;
   background: url("../img/sliderC.jpg") no-repeat fixed;
   background-position: center center;
   background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  // -webkit-background-size: cover;
+  // -moz-background-size: cover;
+  // -o-background-size: cover;
   height: 800px;
   @media (max-width: 992px) {
     height: 600px !important;
@@ -152,7 +152,7 @@ $colorNegro: #0c0c0c;
     height: 400px !important;
   }
   @media (max-width: 375px) {
-    height: 550px !important;
+    height: 500px !important;
   }
 
   .container {
@@ -608,7 +608,8 @@ $colorNegro: #0c0c0c;
   // -moz-background-size: cover;
   // -o-background-size: cover;
   // background-size: cover;
-  min-height: 400px;
+  // min-height: 400px;
+
   @media (max-width: 375px) {
     height: 250px !important;
     background-position-y: bottom !important;
