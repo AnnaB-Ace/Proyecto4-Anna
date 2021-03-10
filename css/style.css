@@ -189,7 +189,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.6); }
+  background-color: rgba(0, 0, 0, 0.4); }
 
 /* Inicio css novedades del index */
 .Informacion {
@@ -411,19 +411,19 @@
   display: flex;
   flex-direction: column;
   padding: 30px;
-  height: 800px; }
+  height: 400px !important; }
   @media (max-width: 992px) {
     .Carta {
-      height: 1000px !important; } }
+      height: 500px !important; } }
   @media (max-width: 685px) {
     .Carta {
-      height: 1100px !important; } }
+      height: 600px !important; } }
   @media (max-width: 611px) {
     .Carta {
-      height: 1200px !important; } }
+      height: 600px !important; } }
   @media (max-width: 414px) {
     .Carta {
-      height: 1200px !important; } }
+      height: 600px !important; } }
   @media (max-width: 334px) {
     .Carta {
       height: 1700px !important; } }
@@ -432,14 +432,14 @@
     background: #f4f2ee;
     width: 950px;
     border-radius: 20px;
-    height: 650px !important;
+    height: 300px !important;
     margin: auto;
     margin-bottom: 30px; }
     @media (max-width: 999px) {
       .Carta #Pedir {
         background: #f4f2ee;
         width: 700px !important;
-        height: 400px !important;
+        height: 330px !important;
         margin-top: 20px !important;
         padding: 30px;
         border-radius: 20px; } }
@@ -450,10 +450,10 @@
     @media (max-width: 685px) {
       .Carta #Pedir {
         width: 580px !important;
-        height: 400px !important; } }
+        height: 380px !important; } }
     @media (max-width: 611px) {
       .Carta #Pedir {
-        width: 390px !important;
+        width: 350px !important;
         height: 520px !important; } }
     @media (max-width: 414px) {
       .Carta #Pedir {
