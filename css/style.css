@@ -345,6 +345,12 @@
 
 /* fin del footer */
 /* inicio css section contacto */
+.imagen__Contacto {
+  position: relative; }
+  @media (max-width: 375px) {
+    .imagen__Contacto {
+      height: 300px; } }
+
 .Contacto {
   text-align: center;
   margin-top: 30px;
@@ -396,11 +402,16 @@
         margin: auto; } }
 
 .Titulo-Menu h2 {
+  display: block;
   font-size: 40px;
   font-family: "Bebas Neue", cursive;
   padding: 50px;
   margin-top: 50px;
-  text-align: center; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52px !important;
+  height: 200px; }
   @media (max-width: 426px) {
     .Titulo-Menu h2 {
       font-size: 38px;
@@ -480,7 +491,8 @@
     display: block;
     padding: 4px;
     text-align: center;
-    font-family: "Yusei Magic", sans-serif; }
+    font-family: "Bebas Neue", cursive;
+    font-size: 28px !important; }
   .Carta .Pedir__Box-Precio {
     width: 50px; }
   .Carta .Pedir__Box-descripcion {
@@ -543,36 +555,65 @@
 
 .image1 {
   position: relative;
-  background: url("../img/sliderA.jpg") no-repeat fixed;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 300px !important; }
-
-.image2 {
-  position: relative;
-  background: url("../img/sliderB.jpg") no-repeat fixed;
+  background: url("../img/coctel1.jpg") no-repeat fixed;
   background-position: center center !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 350px; }
+  height: 300px; }
+  @media (max-width: 375px) {
+    .image1 {
+      height: 220px !important; } }
+
+.image2 {
+  position: relative;
+  background: url("../img/nacho5.jpg") no-repeat fixed;
+  background-position: center center !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 300px; }
   @media (max-width: 375px) {
     .image2 {
       height: 220px !important; } }
 
 .image3 {
   position: relative;
-  background: url("../img/sliderA.jpg") no-repeat fixed;
+  background: url("../img/banner2.jpg") no-repeat fixed;
   background-position: center center !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 400px; }
+  height: 300px; }
   @media (max-width: 375px) {
     .image3 {
+      height: 200px !important; } }
+
+.image4 {
+  position: relative;
+  background: url("../img/sliderB.jpg") no-repeat fixed !important;
+  background-position: center center !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 300px; }
+  @media (max-width: 375px) {
+    .image4 {
+      height: 200px !important; } }
+
+.image5 {
+  position: relative;
+  background: url("../img/sliderA.jpg") no-repeat fixed !important;
+  background-position: center center !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 900px; }
+  @media (max-width: 375px) {
+    .image5 {
       height: 200px !important; } }

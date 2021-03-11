@@ -350,7 +350,47 @@ $colorNegro: #0c0c0c;
 
 /* inicio css section contacto */
 
+// .Contacto {
+//   text-align: center;
+//   margin-top: 30px;
+//   margin-bottom: 30px;
+//   background: #d69869;
+//   margin: 20 auto;
+//   text-align: center;
+//   height: 340px;
+//   .Contacto_formulario {
+//     width: 300px;
+//     margin: 10px auto;
+//     @media (max-width: 280px) {
+//       width: 200px;
+//     }
+//   }
+// }
+.imagen__Contacto {
+  position: relative;
+  @media (max-width: 375px) {
+    height: 300px;
+  }
+}
+
 .Contacto {
+  // position: absolute;
+  // top: 30%;
+  // left: 25%;
+  // right: 25%;
+  // height: 300px;
+  // width: 700px;
+  // border-radius: 33px;
+  // background: rgba(0, 0, 0, 0.3);
+  // text-align: center;
+  // font-family: "Bebas Neue", cursive;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-around;
+  // @media (max-width: 970px) {
+  //   height: 700px;
+  // }
+
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -366,6 +406,26 @@ $colorNegro: #0c0c0c;
     }
   }
 }
+//   h3 {
+//     display: block;
+//     color: white;
+//     font-size: 50px;
+//   }
+
+//   .Contacto_formulario {
+//     width: 250px;
+//     margin: 5px auto;
+//     @media (max-width: 280px) {
+//       width: 200px;
+//     }
+//   }
+//   .btn-secondary {
+//     margin-top: 20px;
+//   }
+// }
+// .Contacto:hover {
+//   opacity: 0.8;
+// }
 
 /* fin css section contacto */
 
@@ -410,16 +470,25 @@ $colorNegro: #0c0c0c;
   }
 }
 
-.Titulo-Menu h2 {
-  font-size: 40px;
-  font-family: "Bebas Neue", cursive;
-  padding: 50px;
-  margin-top: 50px;
-  text-align: center;
-  @media (max-width: 426px) {
-    font-size: 38px;
-    position: relative;
-    left: auto;
+.Titulo-Menu {
+  h2 {
+    display: block;
+    font-size: 40px;
+    font-family: "Bebas Neue", cursive;
+    padding: 50px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 52px !important;
+
+    height: 200px;
+
+    @media (max-width: 426px) {
+      font-size: 38px;
+      position: relative;
+      left: auto;
+    }
   }
 }
 
@@ -502,7 +571,8 @@ $colorNegro: #0c0c0c;
     display: block;
     padding: 4px;
     text-align: center;
-    font-family: "Yusei Magic", sans-serif;
+    font-family: "Bebas Neue", cursive;
+    font-size: 28px !important;
   }
   .Pedir__Box-Precio {
     width: 50px;
@@ -580,23 +650,27 @@ $colorNegro: #0c0c0c;
 
 .image1 {
   position: relative;
-  background: url("../img/sliderA.jpg") no-repeat fixed;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 300px !important;
-}
-.image2 {
-  position: relative;
-  background: url("../img/sliderB.jpg") no-repeat fixed;
+  background: url("../img/coctel1.jpg") no-repeat fixed;
   background-position: center center !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 350px;
+  height: 300px;
+
+  @media (max-width: 375px) {
+    height: 220px !important;
+  }
+}
+.image2 {
+  position: relative;
+  background: url("../img/nacho5.jpg") no-repeat fixed;
+  background-position: center center !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 300px;
 
   @media (max-width: 375px) {
     height: 220px !important;
@@ -604,13 +678,41 @@ $colorNegro: #0c0c0c;
 }
 .image3 {
   position: relative;
-  background: url("../img/sliderA.jpg") no-repeat fixed;
+  background: url("../img/banner2.jpg") no-repeat fixed;
   background-position: center center !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 400px;
+  height: 300px;
+
+  @media (max-width: 375px) {
+    height: 200px !important;
+  }
+}
+.image4 {
+  position: relative;
+  background: url("../img/sliderB.jpg") no-repeat fixed !important;
+  background-position: center center !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 300px;
+
+  @media (max-width: 375px) {
+    height: 200px !important;
+  }
+}
+.image5 {
+  position: relative;
+  background: url("../img/sliderA.jpg") no-repeat fixed !important;
+  background-position: center center !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 900px;
 
   @media (max-width: 375px) {
     height: 200px !important;
