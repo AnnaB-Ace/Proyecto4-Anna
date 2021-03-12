@@ -366,13 +366,26 @@ $colorNegro: #0c0c0c;
 //     }
 //   }
 // }
-.imagen__Contacto {
-  position: relative;
-  @media (max-width: 375px) {
-    height: 300px;
+
+.Titulo-contacto {
+  h2 {
+    display: block;
+    font-size: 40px;
+    font-family: "Bebas Neue", cursive;
+    padding: 50px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 52px !important;
+    color: white;
+    height: 200px;
+    @media (max-width: 414px) {
+      font-size: 30px;
+      text-align: center;
+    }
   }
 }
-
 .Contacto {
   // position: absolute;
   // top: 30%;
@@ -390,14 +403,18 @@ $colorNegro: #0c0c0c;
   // @media (max-width: 970px) {
   //   height: 700px;
   // }
-
+  font-family: "Bebas Neue", cursive;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 30px;
-  background: #d69869;
+  border-radius: 33px;
+  background: rgba(0, 0, 0, 0.4);
   margin: 20 auto;
   text-align: center;
-  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   .Contacto_formulario {
     width: 300px;
     margin: 10px auto;
@@ -405,6 +422,9 @@ $colorNegro: #0c0c0c;
       width: 200px;
     }
   }
+}
+.containercontacto {
+  background-color: green !important;
 }
 //   h3 {
 //     display: block;
@@ -706,15 +726,15 @@ $colorNegro: #0c0c0c;
 }
 .image5 {
   position: relative;
-  background: url("../img/sliderA.jpg") no-repeat fixed !important;
+  background: url("../img/nacho5.jpg") no-repeat fixed;
   background-position: center center !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 900px;
+  height: 600px;
 
   @media (max-width: 375px) {
-    height: 200px !important;
+    height: 220px !important;
   }
 }
