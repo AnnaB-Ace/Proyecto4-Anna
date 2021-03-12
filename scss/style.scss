@@ -366,8 +366,7 @@ $colorNegro: #0c0c0c;
 //     }
 //   }
 // }
-
-.Titulo-contacto {
+.Titulo-slider {
   h2 {
     display: block;
     font-size: 40px;
@@ -378,14 +377,24 @@ $colorNegro: #0c0c0c;
     align-items: center;
     justify-content: center;
     font-size: 52px !important;
-    color: white;
+    letter-spacing: 0.08em;
     height: 200px;
-    @media (max-width: 414px) {
-      font-size: 30px;
+
+    @media (max-width: 946px) {
+      font-size: 42px !important;
+      margin: auto !important;
       text-align: center;
+    }
+    @media (max-width: 375px) {
+      font-size: 30px !important;
+      margin: auto !important;
+      margin-top: 30px !important;
+      text-align: center;
+      height: 180px;
     }
   }
 }
+
 .Contacto {
   // position: absolute;
   // top: 30%;
@@ -408,13 +417,17 @@ $colorNegro: #0c0c0c;
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 33px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   margin: 20 auto;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  h3 {
+    color: white !important;
+  }
+
   .Contacto_formulario {
     width: 300px;
     margin: 10px auto;
@@ -423,9 +436,7 @@ $colorNegro: #0c0c0c;
     }
   }
 }
-.containercontacto {
-  background-color: green !important;
-}
+
 //   h3 {
 //     display: block;
 //     color: white;
@@ -732,9 +743,9 @@ $colorNegro: #0c0c0c;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  height: 600px;
+  height: 500px !important;
 
   @media (max-width: 375px) {
-    height: 220px !important;
+    height: 400px !important;
   }
 }
