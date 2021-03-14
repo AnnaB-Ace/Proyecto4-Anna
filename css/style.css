@@ -191,6 +191,29 @@
   right: 0;
   background-color: rgba(0, 0, 0, 0.4); }
 
+.Titulo-nosotros h2 {
+  display: block;
+  font-size: 40px;
+  font-family: "Bebas Neue", cursive;
+  padding: 40px;
+  color: white;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 52px !important;
+  height: 200px; }
+  @media (max-width: 426px) {
+    .Titulo-nosotros h2 {
+      margin: auto;
+      font-size: px !important;
+      height: 100px; } }
+
+@media (max-width: 426px) {
+  .Titulo-nosotros .Titulo-Menu--altura {
+    margin: auto;
+    text-align: center; } }
+
 /* Inicio css novedades del index */
 .Informacion {
   height: 500px;
@@ -343,8 +366,6 @@
   .footer p {
     font-family: "Yusei Magic", sans-serif; }
 
-/* fin del footer */
-/* inicio css section contacto */
 .Titulo-slider h2 {
   display: block;
   font-size: 40px;
@@ -370,6 +391,21 @@
       text-align: center;
       height: 180px; } }
 
+.Titulo__contacto {
+  display: block;
+  margin: auto; }
+  @media (max-width: 494px) {
+    .Titulo__contacto h2 {
+      margin-top: 30px !important;
+      font-size: 26px !important; } }
+  @media (max-width: 614px) {
+    .Titulo__contacto h2 {
+      font-size: 34px !important; } }
+  @media (max-width: 1200px) {
+    .Titulo__contacto h2 {
+      margin: auto;
+      text-align: center; } }
+
 .Contacto {
   font-family: "Bebas Neue", cursive;
   text-align: center;
@@ -383,16 +419,21 @@
   justify-content: center;
   align-items: center;
   flex-direction: column; }
+  @media (max-width: 740px) {
+    .Contacto .col {
+      margin: auto; } }
   .Contacto h3 {
     color: white !important; }
   .Contacto .Contacto_formulario {
     width: 300px;
     margin: 10px auto; }
-    @media (max-width: 280px) {
+    @media (max-width: 333px) {
       .Contacto .Contacto_formulario {
         width: 200px; } }
+    @media (max-width: 213px) {
+      .Contacto .Contacto_formulario {
+        width: 130px; } }
 
-/* fin css section contacto */
 .Products {
   text-align: center;
   display: flex;
@@ -440,9 +481,13 @@
   height: 200px; }
   @media (max-width: 426px) {
     .Titulo-Menu h2 {
-      font-size: 38px;
-      position: relative;
-      left: auto; } }
+      font-size: px !important;
+      height: 100px; } }
+
+@media (max-width: 426px) {
+  .Titulo-Menu .Titulo-Menu--altura {
+    margin: auto;
+    text-align: center; } }
 
 .Carta {
   display: flex;
@@ -552,15 +597,24 @@
   height: 500px; }
 
 .div1 {
-  background: url("../img/banner2.jpg") no-repeat;
+  background: url("../img/coctel1.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
-  height: 350px; }
+  height: 400px; }
   @media (max-width: 414px) {
     .div1 {
-      height: 250px;
+      height: 450px;
       background-position-y: bottom !important; } }
+
+.div1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4); }
 
 .div3 {
   background: url("../img/banner2.jpg") no-repeat;
