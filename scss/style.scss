@@ -1,7 +1,3 @@
-$colorgris: #2f2e2e;
-$colorblanco: #fff;
-$colorNegro: #0c0c0c;
-
 .slider {
   padding-left: 0px;
   padding-right: 0px;
@@ -17,7 +13,7 @@ $colorNegro: #0c0c0c;
   z-index: 1000;
   height: 60px;
   width: 100%;
-  background: $colorNegro !important;
+  background: #0c0c0c !important;
   -webkit-transition: all ease-out 0.5s;
   -moz-transition: all ease-out 0.5s;
   -o-transition: all ease-out 0.5s;
@@ -56,7 +52,7 @@ $colorNegro: #0c0c0c;
   }
 
   .header__nav {
-    color: $colorblanco !important;
+    color: #fff !important;
     font-family: "Bebas Neue", cursive;
     font-size: 24px;
     text-align: center;
@@ -126,11 +122,11 @@ $colorNegro: #0c0c0c;
   margin: auto;
   text-decoration: none !important;
   text-align: center;
-  color: $colorgris;
+  color: #2f2e2e;
 }
 .Reserva__parrafo:hover {
   opacity: 0.8;
-  color: $colorNegro;
+  color: #0c0c0c;
 }
 /* inicio css slider index */
 
@@ -167,9 +163,6 @@ $colorNegro: #0c0c0c;
     font-weight: 700;
 
     @media (max-width: 400px) {
-      font-size: 60px;
-    }
-    @media (max-width: 375px) {
       height: 400px !important;
       font-size: 50px;
       top: 70%;
@@ -181,9 +174,9 @@ $colorNegro: #0c0c0c;
       letter-spacing: 0.08em;
       margin: auto;
       font-family: "Bebas Neue", cursive;
-      color: $colorblanco;
-      @media (max-width: 400px) {
-        font-size: 60px;
+      color: #fff;
+      @media (max-width: 405px) {
+        font-size: 50px;
       }
       span {
         border: 7px solid white;
@@ -195,26 +188,29 @@ $colorNegro: #0c0c0c;
         }
       }
     }
-    .des {
+    .container__des {
       margin: 20px;
       display: block;
       font-size: 26px;
-      color: $colorblanco;
+      color: #fff;
       font-family: "Yusei Magic", sans-serif;
       @media (max-width: 375px) {
-        font-size: 20px;
+        font-size: 24px;
       }
     }
-    .btn {
-      color: $colorgris;
+    .container__btn {
+      color: #2f2e2e;
       padding: 10px 24px;
       text-decoration: none;
       background: #f1f1f1;
       border-radius: 8px;
       transition: 0.3s all;
       font-family: "Yusei Magic", sans-serif;
+      @media (max-width: 405px) {
+        font-size: 16px;
+      }
     }
-    .btn:hover {
+    .container__btn:hover {
       opacity: 0.8;
     }
   }
@@ -230,20 +226,344 @@ $colorNegro: #0c0c0c;
 }
 
 // fin slider
+// inicio section de eventos y slider
+.eventos {
+  width: 100%;
+  background: #323232;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 414px) {
+    height: 200px;
+  }
+
+  .anuncio {
+    width: 420px;
+    padding: 20px;
+    height: 200px;
+    background: #ffbb01 !important;
+    margin: auto;
+    @media (max-width: 415px) {
+      display: flex;
+      flex-direction: column;
+      height: 150px;
+    }
+    p {
+      font-size: 38px;
+      font-family: "Yusei Magic", sans-serif;
+      @media (max-width: 415px) {
+        font-size: 20px;
+      }
+    }
+  }
+}
+.h5 {
+  font-family: "Yusei Magic", sans-serif;
+  font-size: 24px;
+}
+// fin section de eventos y slider
+
+/* inicio  footer */
+.footer {
+  background: #0c0c0c !important;
+  height: 180px;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    margin-top: 20px;
+    color: #ffbb01;
+    font-family: "Bebas Neue", cursive;
+    font-size: 24px;
+    letter-spacing: 0.08em;
+    @media (max-width: 280px) {
+      font-size: 18px !important;
+    }
+    .disenado {
+      color: #d69869 !important;
+    }
+  }
+  p {
+    font-family: "Yusei Magic", sans-serif;
+  }
+
+  @media (max-width: 415px) {
+  }
+}
+/*fin footer */
+
+.Titulo__contacto {
+  @media (max-width: 480px) {
+    font-size: 36px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+  }
+
+  h2 {
+    display: block;
+    font-size: 40px;
+    font-family: "Bebas Neue", cursive;
+    padding: 50px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 52px !important;
+    height: 200px;
+    @media (max-width: 979px) {
+      font-size: 38px !important;
+      height: 150px;
+      text-align: center;
+    }
+
+    @media (max-width: 426px) {
+      font-size: 40px !important;
+      height: 150px;
+      text-align: center;
+    }
+    @media (max-width: 375px) {
+      font-size: 28px !important;
+    }
+  }
+}
+.Contacto {
+  font-family: "Bebas Neue", cursive;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 33px;
+  background: rgba(0, 0, 0, 0.6);
+  margin: 20 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .col {
+    @media (max-width: 740px) {
+      margin: auto;
+    }
+  }
+  h3 {
+    color: white !important;
+  }
+
+  .Contacto_formulario {
+    width: 300px;
+    margin: 10px auto;
+
+    @media (max-width: 333px) {
+      width: 200px;
+    }
+    @media (max-width: 213px) {
+      width: 130px;
+    }
+  }
+}
+
+//fin section contacto
+
+//inicio section productos
+
+.Products {
+  text-align: center;
+  display: flex;
+  margin: 0px auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 50px;
+
+  &__Box {
+    color: #fff;
+    width: 231px;
+    height: 218px;
+    background: #0c0c0c;
+    border: solid 3px white;
+    font-family: "Bebas Neue", cursive;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__Box:hover {
+    color: #fff;
+    background: #2f2e2e;
+    transform: scale(1.1, 1.1);
+  }
+  &_Box-titulo {
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 0.02em;
+    @media (min-width: 426px) {
+      margin: auto;
+    }
+    @media (min-width: 321px) {
+      font-size: 20px;
+      letter-spacing: 0.08em;
+      margin: auto;
+    }
+  }
+}
+
+.Titulo-Menu {
+  h2 {
+    display: block;
+    font-size: 40px;
+    font-family: "Bebas Neue", cursive;
+    padding: 50px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 52px !important;
+    height: 200px;
+
+    @media (max-width: 426px) {
+      font-size: 40px !important;
+      height: 150px;
+      text-align: center;
+    }
+  }
+}
+
+.Carta {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  height: 400px !important;
+  // height: 1000px;
+  @media (max-width: 992px) {
+    height: 500px !important;
+  }
+  @media (max-width: 685px) {
+    height: 600px !important;
+  }
+  @media (max-width: 611px) {
+    height: 600px !important;
+  }
+  @media (max-width: 414px) {
+    // height: 1500px !important;
+    height: 600px !important;
+  }
+  @media (max-width: 334px) {
+    height: 700px !important;
+  }
+
+  #Pedir {
+    /* background: #f4f2ee; */
+    background: #f4f2ee;
+    width: 950px;
+    border-radius: 20px;
+    height: 300px !important;
+    margin: auto;
+    margin-bottom: 30px;
+    @media (max-width: 999px) {
+      background: #f4f2ee;
+      width: 700px !important;
+      height: 330px !important;
+      margin-top: 20px !important;
+      padding: 30px;
+      border-radius: 20px;
+    }
+    @media (max-width: 768px) {
+      width: 650px !important;
+      height: 350px !important;
+    }
+    @media (max-width: 685px) {
+      width: 580px !important;
+      height: 380px !important;
+    }
+    @media (max-width: 611px) {
+      width: 350px !important;
+      height: 520px !important;
+    }
+    @media (max-width: 414px) {
+      width: 300px !important;
+      height: 550px !important;
+    }
+    @media (max-width: 334px) {
+      width: 230px !important;
+      height: 700px !important;
+      font-size: 12px !important;
+    }
+  }
+  .Pedir__Box {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    @media (max-width: 396px) {
+      padding: 5px;
+    }
+  }
+  .Pedir__Box-Titulo {
+    width: 200px;
+    font-family: "Bebas Neue", cursive;
+    font-size: 18px !important;
+    margin-left: 15px;
+
+    @media (max-width: 414px) {
+      font-size: 14px !important;
+      margin-right: 10px;
+    }
+  }
+  .Pedir__titulo {
+    display: block;
+    margin: 30px;
+    text-align: center;
+    font-family: "Bebas Neue", cursive;
+    font-size: 28px !important;
+  }
+  .Pedir__Box-Precio {
+    width: 50px;
+    @media (max-width: 334px) {
+      margin-left: 10px;
+    }
+  }
+  .Pedir__Box-descripcion {
+    font-family: "Yusei Magic", sans-serif;
+    width: 600px;
+  }
+}
+/* fin css section producto: carta */
+
+//Comienzo section 2 nosotros
+.nosotros__texto {
+  font-family: "Yusei Magic", sans-serif;
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+}
 .Titulo-nosotros {
   h2 {
     display: block;
     font-size: 40px;
     font-family: "Bebas Neue", cursive;
     padding: 40px;
-    color: white;
+    color: #fff;
     margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 52px !important;
-
     height: 200px;
+    line-height: 0.08em;
+    @media (max-width: 320px) {
+      margin: auto;
+      font-size: 20px !important;
+      text-align: center;
+    }
+    @media (max-width: 380px) {
+      margin: auto;
+      font-size: 40px !important;
+      height: 100px;
+    }
 
     @media (max-width: 426px) {
       margin: auto;
@@ -259,6 +579,7 @@ $colorNegro: #0c0c0c;
   }
 }
 
+//section  novedades
 /* Inicio css novedades del index */
 
 .Informacion {
@@ -308,340 +629,6 @@ $colorNegro: #0c0c0c;
     }
   }
 }
-/* fin section novedades */
-
-// inicio section de eventos
-.eventos {
-  width: 100%;
-  background: #323232;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  @media (max-width: 414px) {
-    height: 200px;
-  }
-
-  .anuncio {
-    width: 420px;
-    padding: 20px;
-    height: 200px;
-    background: #ffbb01 !important;
-    margin: auto;
-    @media (max-width: 415px) {
-      display: flex;
-      flex-direction: column;
-      height: 150px;
-    }
-    p {
-      font-size: 38px;
-      font-family: "Yusei Magic", sans-serif;
-      @media (max-width: 415px) {
-        font-size: 20px;
-      }
-    }
-  }
-}
-
-/* inicio  footer */
-.footer {
-  background: $colorNegro !important;
-  height: 180px;
-  width: 100%;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  h3 {
-    margin-top: 20px;
-    color: #ffbb01;
-    font-family: "Bebas Neue", cursive;
-    font-size: 24px;
-    letter-spacing: 0.08em;
-    @media (max-width: 280px) {
-      font-size: 18px !important;
-    }
-    .disenado {
-      color: #d69869 !important;
-    }
-  }
-  p {
-    font-family: "Yusei Magic", sans-serif;
-  }
-
-  @media (max-width: 415px) {
-  }
-}
-
-.Titulo-slider {
-  h2 {
-    display: block;
-    font-size: 40px;
-    font-family: "Bebas Neue", cursive;
-    padding: 50px;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 52px !important;
-    letter-spacing: 0.08em;
-    height: 200px;
-
-    @media (max-width: 946px) {
-      font-size: 42px !important;
-      margin: auto !important;
-      text-align: center;
-    }
-    @media (max-width: 375px) {
-      font-size: 30px !important;
-      margin: auto !important;
-      margin-top: 30px !important;
-      text-align: center;
-      height: 180px;
-    }
-  }
-}
-//Inicio section contacto
-.Titulo__contacto {
-  display: block;
-  margin: auto;
-  h2 {
-    @media (max-width: 494px) {
-      margin-top: 30px !important;
-      font-size: 26px !important;
-    }
-    @media (max-width: 614px) {
-      font-size: 34px !important;
-    }
-    @media (max-width: 1200px) {
-      margin: auto;
-      text-align: center;
-    }
-  }
-}
-.Contacto {
-  font-family: "Bebas Neue", cursive;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-radius: 33px;
-  background: rgba(0, 0, 0, 0.6);
-  margin: 20 auto;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  .col {
-    @media (max-width: 740px) {
-      margin: auto;
-    }
-  }
-  h3 {
-    color: white !important;
-  }
-
-  .Contacto_formulario {
-    width: 300px;
-    margin: 10px auto;
-
-    @media (max-width: 333px) {
-      width: 200px;
-    }
-    @media (max-width: 213px) {
-      width: 130px;
-    }
-  }
-}
-
-//Inicio section contacto
-
-.Products {
-  text-align: center;
-  display: flex;
-  margin: 0px auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 50px;
-
-  &__Box {
-    color: #fff;
-    width: 231px;
-    height: 218px;
-    background: #0c0c0c;
-    border: solid 3px white;
-    font-family: "Bebas Neue", cursive;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  &__Box:hover {
-    color: #fff;
-    background: $colorgris;
-    transform: scale(1.1, 1.1);
-  }
-  &_Box-titulo {
-    font-size: 10px;
-    line-height: 40px;
-    font-weight: 0.02em;
-    @media (min-width: 426px) {
-      margin: auto;
-    }
-    @media (min-width: 321px) {
-      font-size: 20px;
-      letter-spacing: 0.08em;
-      margin: auto;
-    }
-  }
-}
-
-.Titulo-Menu {
-  h2 {
-    display: block;
-    font-size: 40px;
-    font-family: "Bebas Neue", cursive;
-    padding: 50px;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 52px !important;
-
-    height: 200px;
-
-    @media (max-width: 426px) {
-      font-size: px !important;
-      height: 100px;
-    }
-  }
-  .Titulo-Menu--altura {
-    @media (max-width: 426px) {
-      margin: auto;
-      text-align: center;
-    }
-  }
-}
-
-.Carta {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  height: 400px !important;
-  // height: 1000px;
-  @media (max-width: 992px) {
-    height: 500px !important;
-  }
-  @media (max-width: 685px) {
-    height: 600px !important;
-  }
-  @media (max-width: 611px) {
-    height: 600px !important;
-  }
-  @media (max-width: 414px) {
-    // height: 1500px !important;
-    height: 600px !important;
-  }
-  @media (max-width: 334px) {
-    height: 1700px !important;
-  }
-
-  #Pedir {
-    /* background: #f4f2ee; */
-    background: #f4f2ee;
-    width: 950px;
-    border-radius: 20px;
-    height: 300px !important;
-    margin: auto;
-    margin-bottom: 30px;
-    @media (max-width: 999px) {
-      background: #f4f2ee;
-      width: 700px !important;
-      height: 330px !important;
-      margin-top: 20px !important;
-      padding: 30px;
-      border-radius: 20px;
-    }
-    @media (max-width: 768px) {
-      width: 650px !important;
-      height: 350px !important;
-    }
-    @media (max-width: 685px) {
-      width: 580px !important;
-      height: 380px !important;
-    }
-    @media (max-width: 611px) {
-      width: 350px !important;
-      height: 520px !important;
-    }
-    @media (max-width: 414px) {
-      width: 300px !important;
-      height: 550px !important;
-    }
-    @media (max-width: 334px) {
-      width: 230px !important;
-      height: 700px !important;
-      font-size: 12px !important;
-    }
-  }
-  .Pedir__Box {
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  .Pedir__Box-Titulo {
-    width: 200px;
-    font-family: "Bebas Neue", cursive;
-    font-size: 18px;
-    @media (max-width: 334px) {
-      font-size: 16px !important;
-    }
-  }
-  .Pedir__titulo {
-    display: block;
-    padding: 4px;
-    text-align: center;
-    font-family: "Bebas Neue", cursive;
-    font-size: 28px !important;
-  }
-  .Pedir__Box-Precio {
-    width: 50px;
-  }
-  .Pedir__Box-descripcion {
-    font-family: "Yusei Magic", sans-serif;
-    width: 600px;
-  }
-}
-/* fin css section producto: carta */
-
-//Comienzo section 2 nosotros
-
-.nosotros__texto {
-  background: #f4f2ee;
-  .nosotros__texto--letras {
-    margin: 25px;
-    font-size: 22px;
-    font-family: "Yusei Magic", sans-serif;
-    @media (max-width: 414px) {
-      font-size: 20px;
-    }
-    @media (max-width: 280px) {
-      font-size: 16px;
-    }
-  }
-  h2 {
-    font-family: "Bebas Neue", cursive;
-    margin: 15px;
-    text-align: center;
-    margin-top: 30px;
-  }
-}
-
-//Fin section 2 nosotros
-
-//section modificable novedades
 .general {
   display: flex;
   align-items: center;
@@ -670,24 +657,10 @@ $colorNegro: #0c0c0c;
   right: 0;
   background-color: rgba(0, 0, 0, 0.4);
 }
-.div3 {
-  background: url("../img/banner2.jpg") no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center center;
-  height: 300px;
-  @media (max-width: 414px) {
-    height: 250px;
-    background-position-y: bottom !important;
-  }
-}
-.div4 {
-  background-color: #ffbb01 !important;
-}
-// Css active usado para el scroll js
-.active1 {
-  background-color: rgba(34, 34, 34, 0.8) !important;
-}
+
+/* fin section novedades */
+
+// Css de imagenes fijas usadas en distintas section
 
 .image1 {
   position: relative;
@@ -759,3 +732,50 @@ $colorNegro: #0c0c0c;
     height: 400px !important;
   }
 }
+.image6 {
+  background: url("../img/sliderA.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 400px;
+  @media (max-width: 414px) {
+    height: 350px;
+    background-position-y: bottom !important;
+  }
+}
+.image6::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.image7 {
+  background: url("../img/sliderA.jpg") no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 340px;
+  @media (max-width: 414px) {
+    height: 290px;
+    background-position-y: bottom !important;
+  }
+}
+.image7::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+// Css de imagenes fijas usadas en distintas section
+
+// Css active usado para el scroll js
+.active1 {
+  background-color: rgba(34, 34, 34, 0.8) !important;
+}
+//fin  Css active usado para el scroll js
