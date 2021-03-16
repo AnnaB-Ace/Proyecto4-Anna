@@ -34,7 +34,7 @@
     margin-left: 25px;
 
     @media (max-width: 990px) {
-      height: 50px;
+      height: 45px;
       width: 100px;
       position: relative;
       top: -10px;
@@ -47,7 +47,7 @@
     background-color: black;
     @media (max-width: 990px) {
       position: relative;
-      top: -15px;
+      top: -14px;
     }
   }
 
@@ -189,10 +189,11 @@
       }
     }
     .container__des {
-      margin: 20px;
       display: block;
       font-size: 34px;
       color: #fff;
+      margin-top: 30px;
+      margin-bottom: 30px;
       letter-spacing: 0.08em;
       font-family: "Bebas Neue";
       @media (max-width: 375px) {
@@ -205,6 +206,7 @@
       text-decoration: none;
       background: #f1f1f1;
       border-radius: 8px;
+      font-size: 22px;
       transition: 0.3s all;
       font-family: "Yusei Magic", sans-serif;
       @media (max-width: 405px) {
@@ -261,9 +263,9 @@
     }
   }
 }
-.h5 {
+.h2 {
   font-family: "Yusei Magic", sans-serif;
-  font-size: 24px;
+  font-size: 32px !important;
 }
 // fin section de eventos y slider
 
@@ -582,7 +584,7 @@
   }
 }
 
-//section  novedades
+//fin section nosotros
 /* Inicio css novedades del index */
 
 .Informacion {
@@ -723,7 +725,7 @@
 }
 .image5 {
   position: relative;
-  background: url("../img/nacho5.jpg") no-repeat fixed;
+  background: url("../img/banner2.jpg") no-repeat fixed;
   background-position: center center !important;
   -webkit-background-size: cover;
   -moz-background-size: cover;
